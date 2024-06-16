@@ -18,7 +18,7 @@ def read_data(taxi_type, year_run, month_run):
     return df
 
 def load_model(model_file):
-    with open('model.bin', 'rb') as f_in:
+    with open(model_file, 'rb') as f_in:
         dv, model = pickle.load(f_in)
     return dv, model
 
